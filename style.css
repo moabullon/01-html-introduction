@@ -14,25 +14,24 @@ body {
 
 .top-nav {
   width: 100%;
-  background: rgba(120,120,120, 0.2)
+  background: rgba(120,120,120, 1);
   border: solid 1px #f1f1f1;
 }
 
 .nav-list {
   display: flex;
-  margin: 0
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav-list__item {
+.nav-list-item {
   margin: 1rem 0.5rem;
   text-transform: uppercase;
 }
 
-.nav-list__item--brand {
+.nav-list-item-brand {
   flex: 1;
-
   font-weight: bold;
 }
 
@@ -40,28 +39,28 @@ body {
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
   height: 100vh;
   text-align: center;
-
-  background: url('http://www.developerdev.com/images/placeholders/1920x1200-3.jpg') no-repeat center center fixed;
+  background: url("https://wallpaperscraft.com/image/computer_keyboard_mouse_laptop_mac_apple_66734_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   color: #f1f1f1;
   text-shadow: 1px 1px 2px #2a2a2a;
 }
 
-.hero__container {
+.hero-container {
   max-width: 60rem;
+}
 
-
-.hero__title {
+.hero-title {
   font-size: 5rem;
   margin: 2rem 0;
-
   text-transform: uppercase;
 }
 
@@ -71,11 +70,12 @@ body {
   overflow: hidden;
 }
 
-.divider--hero {
+
+.divider-hero {
   border-bottom-color: #00a5bb;
 }
 
-.hero__text {
+.hero-text {
   margin: 2rem 0;
   font-size: 1.2rem;
 }
@@ -95,15 +95,32 @@ body {
   margin: auto;
 }
 
+.divider1 {
+  color: white;
+  height: 3px;
+}
+
 #bg-photo {
-  background: url('http://i.imgur.com/PNpGUvq.jpg?1') no-repeat center center;
+  background: url("http://i.imgur.com/PNpGUvq.jpg?1");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  text-align:center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.bg-pop .divider {
+.tagliner{
+  font-size: 40px;
+  vertical-align;
+  color: white;
+
+
+}
+
+.bg-pop.divider {
   border-bottom-color: #f1f1f1;
 }
 
@@ -115,7 +132,6 @@ body {
 
 .row {
   margin: 0 -1rem;
-  display: flex;
 }
 
 .bg-standard {
@@ -123,20 +139,25 @@ body {
   color: #2f2f2f;
 }
 
-.row__column {
+.row-column {
   width: calc(100% / 3 - 1rem);
   margin: 0 1rem;
 }
 
+.x {
+  display: inherit;
+  width: 100%;
+}
+
 figure {
   text-align: center;
-  background: rgba(120,120,120, 0.2);
+  background: rgba(120,120,120, 1);
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
 figure span {
-  color: 00a5bb;
+  color: #00a5bb;
 }
 
 .photo-title {
